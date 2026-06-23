@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Kendriya Vidyalaya PM SHRI Training's visual media gallery. View images of our high-tech classrooms, athletic fields, and dynamic student campus events.">
+  <title>Gallery | Kendriya Vidyalaya PM SHRI Training</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="image/kvs-logo.svg" alt="Kendriya Vidyalaya Sangathan logo" class="logo-icon">
+        KV PM SHRI<span>Training</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="alumni.html" class="nav-link">Alumni</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="admissions.html" class="btn btn-accent nav-cta">Enroll Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Campus Gallery</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a>Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="badge">Visual Tour</span>
+        <h2>Life at Kendriya Vidyalaya</h2>
+        <p>Explore snapshots of our beautiful campus, state-of-the-art facilities, active sports fields, and graduation events.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="btn btn-accent" data-filter="all">Show All</button>
+        <button class="btn btn-secondary" data-filter="campus">Campus & Grounds</button>
+        <button class="btn btn-secondary" data-filter="classrooms">Classrooms & Labs</button>
+        <button class="btn btn-secondary" data-filter="sports">Athletics & Sports</button>
+        <button class="btn btn-secondary" data-filter="events">Events & Graduation</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="campus">
+          <img src="assets/images/hero.png" alt="Kendriya Vidyalaya main campus building architecture">
+          <div class="gallery-overlay">
+            <h3>KV Modern Campus</h3>
+            <span>Campus & Grounds</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="classrooms">
+          <img src="assets/images/classroom.png" alt="Interactive science lab with high school students">
+          <div class="gallery-overlay">
+            <h3>High-Tech Biotech Lab</h3>
+            <span>Classrooms & Labs</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="sports">
+          <img src="assets/images/sports.png" alt="Soccer tournament on school grass turf">
+          <div class="gallery-overlay">
+            <h3>Varsity Soccer Match</h3>
+            <span>Athletics & Sports</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="events">
+          <img src="assets/images/graduation.png" alt="Happy graduates tossing caps in the air">
+          <div class="gallery-overlay">
+            <h3>Graduation Ceremony 2025</h3>
+            <span>Events & Graduation</span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="campus">
+          <img src="assets/images/principal.png" alt="School principal standing in front of libraries">
+          <div class="gallery-overlay">
+            <h3>Presidential Library Lounge</h3>
+            <span>Campus & Grounds</span>
+          </div>
+        </div>
+
+        <!-- Item 6 (Repeated for visual density with different caption) -->
+        <div class="gallery-item" data-category="classrooms">
+          <img src="assets/images/classroom.png" alt="Collaborative workspace inside science department">
+          <div class="gallery-overlay">
+            <h3>STEM Research Room</h3>
+            <span>Classrooms & Labs</span>
+          </div>
+        </div>
+
+        <!-- Item 7 (Repeated for density) -->
+        <div class="gallery-item" data-category="sports">
+          <img src="assets/images/sports.png" alt="Students running training sessions on turf field">
+          <div class="gallery-overlay">
+            <h3>Athletic Training Tracks</h3>
+            <span>Athletics & Sports</span>
+          </div>
+        </div>
+
+        <!-- Item 8 (Repeated for density) -->
+        <div class="gallery-item" data-category="events">
+          <img src="assets/images/graduation.png" alt="Graduation certificates distributions ceremony">
+          <div class="gallery-overlay">
+            <h3>Convocation Keynote Address</h3>
+            <span>Events & Graduation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Active lightbox image" class="lightbox-img">
+      <div class="lightbox-caption">Active caption text</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-4">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="image/kvs-logo.svg" alt="Kendriya Vidyalaya Sangathan logo" class="logo-icon">
+          KV PM SHRI<span>Training</span>
+        </a>
+        <p>Nurturing minds, inspiring hearts, and shaping future global leaders since 2012. Our state-of-the-art facilities and curriculum foster holistic excellence.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Academics</h4>
+        <ul>
+          <li><a href="academics.html#primary">Primary School</a></li>
+          <li><a href="academics.html#middle">Middle School</a></li>
+          <li><a href="academics.html#high">High School</a></li>
+          <li><a href="academics.html#stem">STEM Focus</a></li>
+          <li><a href="academics.html#clubs">Extracurriculars</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to stay updated with campus events, announcements, and news.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Kendriya Vidyalaya PM SHRI Training. All rights reserved. | Designed by Antigravity</p>
+      <div class="footer-socials-list">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
